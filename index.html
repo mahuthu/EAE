@@ -842,10 +842,10 @@ grid.addEventListener("click",e=>{
   const w=e.target.closest("[data-wish]");
   if(w){e.stopPropagation();w.classList.toggle("active");toast(w.classList.contains("active")?"Saved to your wishlist ♥":"Removed from wishlist");return;}
   const card=e.target.closest(".pkg-card");
-  if(card)openModal(+card.dataset.id);
+  if(card)openModal(card.dataset.id);
 });
 grid.addEventListener("keydown",e=>{
-  if(e.key==="Enter"){const card=e.target.closest(".pkg-card");if(card)openModal(+card.dataset.id);}
+  if(e.key==="Enter"){const card=e.target.closest(".pkg-card");if(card)openModal(card.dataset.id);}
 });
 
 /* ================= FILTERS (chips + search bar) ================= */
@@ -914,7 +914,7 @@ function setGallery(p){
   $("#galleryPrev").hidden=!multiple;$("#galleryNext").hidden=!multiple;$("#galleryDots").hidden=!multiple;
 }
 function openModal(id){
-  const p=PACKAGES.find(x=>x.id===id);if(!p)return;
+  const p=PACKAGES.find(x=>String(x.id)===String(id));if(!p)return;
   setGallery(p);
   $("#mTitle").textContent=p.title;$("#mStars").textContent=starStr(p.stars);
   $("#mDesc").textContent=p.desc;
