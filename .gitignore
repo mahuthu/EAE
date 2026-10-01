@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+data/admin.json
+data/enquiries.json
+data/enquiries.jsonl
+data/bookings.json
+data/affiliate-clicks.jsonl
+data/*.tmp

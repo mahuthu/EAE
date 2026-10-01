@@ -1,0 +1,15 @@
+.git
+.gitignore
+.agents
+.codex
+node_modules
+npm-debug.log*
+.env
+data/admin.json
+data/enquiries.json
+data/enquiries.jsonl
+data/bookings.json
+data/affiliate-clicks.jsonl
+Dockerfile*
+compose*.yaml
+DEPLOYMENT.md

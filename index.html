@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EastAfricaExplore Tours &amp; Travels — Luxury Safaris in Kenya, Tanzania &amp; Zanzibar</title>
+<meta name="description" content="Bespoke luxury East African safaris — Masai Mara, Serengeti, Amboseli, Diani & Zanzibar. Handpicked camps, private guides, once-in-a-lifetime journeys.">
+<link rel="icon" type="image/png" href="images/logo1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2B3C;
+  --navy-2:#0E3549;
+  --navy-soft:rgba(11,43,60,.06);
+  --gold:#B8860B;
+  --gold-2:#9A7229;
+  --gold-soft:rgba(184,134,11,.12);
+  --ivory:#FAFAF7;
+  --white:#FFFFFF;
+  --ink:#22343d;
+  --muted:#6b7d85;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --script:'Great Vibes',cursive;
+  --sans:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  --radius:14px;
+  --shadow-sm:0 4px 18px rgba(11,43,60,.08);
+  --shadow-md:0 14px 44px rgba(11,43,60,.14);
+  --shadow-lg:0 28px 80px rgba(11,43,60,.22);
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.65;font-size:15.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--navy);font-weight:600;line-height:1.15}
+::selection{background:var(--gold);color:#fff}
+.container{width:min(1240px,92%);margin:0 auto}
+.eyebrow{font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before,.eyebrow.center::after{content:"";width:34px;height:1px;background:var(--gold)}
+.script{font-family:var(--script);color:var(--gold);font-weight:400}
+.section{padding:104px 0}
+.section-head{max-width:680px;margin-bottom:52px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+.section-head h2{font-size:clamp(30px,4vw,46px);margin:14px 0 12px}
+.section-head p{color:var(--muted)}
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 32px;border-radius:999px;font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:all .35s var(--ease);position:relative;overflow:hidden}
+.btn svg{width:16px;height:16px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-gold{background:linear-gradient(120deg,var(--gold) 0%,var(--gold-2) 100%);color:#fff;box-shadow:0 10px 26px rgba(184,134,11,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(184,134,11,.45)}
+.btn-gold::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+.btn-gold:hover::after{transform:translateX(120%)}
+.btn-outline{border:1.5px solid var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2);transform:translateY(-2px);box-shadow:0 14px 30px rgba(11,43,60,.3)}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--gold);color:#fff}
+/* ---------- Header ---------- */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s var(--ease);padding:18px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-header.scrolled{padding:10px 0;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 6px 30px rgba(11,43,60,.09);border-bottom:1px solid rgba(184,134,11,.16)}
+.site-header.on-hero:not(.scrolled) .nav-links a,.site-header.on-hero:not(.scrolled) .brand-name{color:#fff}
+.site-header.on-hero:not(.scrolled) .nav-links a::after{background:var(--gold)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo{height:48px;width:auto;transition:height .4s var(--ease);filter:drop-shadow(0 2px 8px rgba(11,43,60,.12))}
+.site-header.on-hero:not(.scrolled) .brand-logo{filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
+.site-header.scrolled .brand-logo{height:42px}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.02em;color:var(--navy);transition:color .4s}
+.brand-sub{font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-top:5px;font-weight:600}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold);transition:width .35s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-links a:hover{color:var(--gold-2)}
+.header-cta{display:flex;align-items:center;gap:14px}
+.header-cta .btn{padding:12px 26px}
+.nav-toggle{display:none;width:44px;height:44px;border-radius:10px;background:var(--navy);flex-direction:column;align-items:center;justify-content:center;gap:5px;z-index:120}
+.nav-toggle span{display:block;width:20px;height:2px;background:#fff;transition:all .35s var(--ease)}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:110;pointer-events:none}
+.drawer .scrim{position:absolute;inset:0;background:rgba(11,43,60,.5);opacity:0;transition:opacity .4s var(--ease);backdrop-filter:blur(4px)}
+.drawer .panel{position:absolute;top:0;right:0;bottom:0;width:min(360px,86%);background:#fff;transform:translateX(105%);transition:transform .5s var(--ease);padding:110px 36px 36px;display:flex;flex-direction:column;overflow-y:auto}
+.drawer.open{pointer-events:auto}
+.drawer.open .scrim{opacity:1}
+.drawer.open .panel{transform:translateX(0)}
+.drawer a.d-link{font-family:var(--serif);font-size:26px;color:var(--navy);padding:13px 0;border-bottom:1px solid var(--navy-soft);display:flex;justify-content:space-between;align-items:center;transition:all .3s}
+.drawer a.d-link:hover{color:var(--gold);padding-left:8px}
+.drawer a.d-link span{font-family:var(--sans);font-size:10px;letter-spacing:.2em;color:var(--gold-2)}
+.drawer .btn{margin-top:28px}
+.drawer .d-contact{margin-top:auto;padding-top:30px;font-size:12.5px;color:var(--muted)}
+.drawer .d-contact strong{color:var(--navy)}
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:0 0 90px;overflow:hidden;background:var(--navy)}
+.hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.hero-slide.active{opacity:1}
+.hero-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.hero-slide.active img{animation:kenburns 8s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1.12)}to{transform:scale(1.02)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,43,60,.42) 0%,rgba(11,43,60,.18) 40%,rgba(11,43,60,.72) 100%)}
+.hero-content{position:relative;z-index:2;width:min(1240px,92%);margin:0 auto}
+.hero-tag{font-family:var(--script);font-size:clamp(26px,3.4vw,40px);color:#e9c96a;display:block;margin-bottom:6px;text-shadow:0 2px 20px rgba(0,0,0,.35)}
+.hero h1{color:#fff;font-size:clamp(42px,6.4vw,84px);font-weight:500;max-width:14ch;text-shadow:0 4px 40px rgba(0,0,0,.35)}
+.hero h1 em{font-style:italic;color:#f0d488}
+.hero-sub{color:rgba(255,255,255,.85);max-width:560px;margin:20px 0 34px;font-size:16.5px;font-weight:300}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-dots{position:absolute;right:4%;bottom:46px;z-index:3;display:flex;flex-direction:column;gap:12px}
+.hero-dots button{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.35);transition:all .4s}
+.hero-dots button.active{background:var(--gold);transform:scale(1.4);box-shadow:0 0 0 5px rgba(184,134,11,.25)}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.7);font-size:10px;letter-spacing:.4em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint::after{content:"";width:1px;height:38px;background:linear-gradient(180deg,var(--gold),transparent);animation:drip 2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* search bar */
+.search-bar{position:relative;z-index:5;width:min(1240px,92%);margin:-72px auto 0;background:#fff;border-radius:18px;box-shadow:var(--shadow-lg);padding:10px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr auto;gap:10px;border:1px solid rgba(184,134,11,.18)}
+.search-field{display:flex;flex-direction:column;gap:4px;padding:12px 18px;border-radius:12px;transition:background .3s;position:relative}
+.search-field:not(:last-of-type)::after{content:"";position:absolute;right:0;top:20%;height:60%;width:1px;background:var(--navy-soft)}
+.search-field:hover{background:var(--ivory)}
+.search-field label{font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);display:flex;align-items:center;gap:6px}
+.search-field label svg{width:13px;height:13px;stroke:var(--gold)}
+.search-field select,.search-field input{border:none;background:transparent;font-family:var(--sans);font-size:14px;color:var(--navy);font-weight:500;outline:none;width:100%;padding:2px 0;color-scheme:light}
+.search-bar .btn{border-radius:12px;padding:0 34px;min-height:100%}
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+/* ---------- Filter chips ---------- */
+.filter-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:-24px 0 46px}
+.chip{padding:10px 22px;border-radius:999px;border:1.5px solid rgba(11,43,60,.18);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);background:#fff;transition:all .3s var(--ease)}
+.chip:hover{border-color:var(--gold);color:var(--gold-2);transform:translateY(-2px)}
+.chip.active{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 8px 20px rgba(11,43,60,.25)}
+/* ---------- Package cards ---------- */
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.pkg-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .45s var(--ease);display:flex;flex-direction:column;position:relative;cursor:pointer;border:1.5px solid transparent}
+.pkg-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:var(--gold)}
+.pkg-media{position:relative;overflow:hidden;aspect-ratio:4/3}
+.pkg-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.pkg-card:hover .pkg-media img{transform:scale(1.08)}
+.pkg-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,43,60,.55));opacity:.85}
+.loc-tag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);color:var(--navy);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px;display:flex;align-items:center;gap:6px}
+.loc-tag svg{width:12px;height:12px;stroke:var(--gold)}
+.dur-tag{position:absolute;bottom:14px;left:16px;z-index:2;color:#fff;font-size:11.5px;font-weight:500;letter-spacing:.1em;display:flex;align-items:center;gap:7px}
+.dur-tag svg{width:14px;height:14px;stroke:#e9c96a}
+.wish{position:absolute;top:12px;right:12px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.wish svg{width:17px;height:17px;stroke:var(--navy);fill:none;transition:all .3s}
+.wish:hover{background:var(--gold)}
+.wish:hover svg{stroke:#fff}
+.wish.active svg{fill:var(--gold);stroke:var(--gold)}
+.pkg-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pkg-stars{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:13px}
+.pkg-body h3{font-size:24px;transition:color .3s}
+.pkg-card:hover h3{color:var(--gold-2)}
+.pkg-body p{font-size:13.5px;color:var(--muted);flex:1}
+.pkg-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--navy);font-weight:500}
+.pkg-meta span{display:inline-flex;align-items:center;gap:6px}
+.pkg-meta svg{width:13px;height:13px;stroke:var(--gold)}
+.tier{display:inline-flex;align-items:center;gap:5px}
+.tier i{width:7px;height:7px;border-radius:50%;background:rgba(11,43,60,.15)}
+.tier i.on{background:var(--gold)}
+.pkg-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--navy-soft);padding-top:16px;margin-top:4px}
+.price small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.price strong{font-family:var(--serif);font-size:24px;color:var(--navy)}
+.price strong span{font-family:var(--sans);font-size:11px;color:var(--muted);font-weight:400}
+.pkg-link{font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2);display:inline-flex;align-items:center;gap:7px}
+.pkg-link svg{width:15px;height:15px;transition:transform .3s var(--ease)}
+.pkg-card:hover .pkg-link svg{transform:translateX(5px)}
+.pkg-grid .hide{display:none}
+.grid-empty{text-align:center;padding:60px 0;color:var(--muted);display:none;font-family:var(--serif);font-size:22px}
+/* ---------- Gold arc divider (logo motif) ---------- */
+.arc-divider{display:flex;justify-content:center;padding:0 0 8px}
+.arc-divider svg{width:220px;height:56px}
+/* ---------- Lodges ---------- */
+.lodges{background:var(--white);position:relative;overflow:hidden}
+.lodges::before{content:"";position:absolute;top:-140px;right:-180px;width:560px;height:560px;opacity:.05;background:repeating-radial-gradient(circle at 100% 0%,transparent 0 34px,var(--gold) 34px 36px);pointer-events:none}
+.lodges::after{content:"";position:absolute;bottom:-120px;left:-160px;width:480px;height:480px;opacity:.04;background:repeating-radial-gradient(circle at 0% 100%,transparent 0 30px,var(--navy) 30px 32px);pointer-events:none}
+.lodge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;position:relative;z-index:2}
+.lodge-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/4.6;box-shadow:var(--shadow-sm);cursor:pointer;transform:translateZ(0)}
+.lodge-card:nth-child(2),.lodge-card:nth-child(5){transform:translateY(28px)}
+.lodge-card img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.lodge-card:hover img{transform:scale(1.07)}
+.lodge-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,43,60,0) 35%,rgba(11,43,60,.82) 100%);transition:opacity .4s}
+.lodge-info{position:absolute;left:0;right:0;bottom:0;padding:26px;z-index:2;transform:translateY(14px);transition:transform .5s var(--ease)}
+.lodge-card:hover .lodge-info{transform:translateY(0)}
+.lodge-info .stars{font-size:12px}
+.lodge-info h3{color:#fff;font-size:25px;margin:6px 0 2px}
+.lodge-info .loc{color:rgba(255,255,255,.75);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase}
+.lodge-meta{color:#f0d488;font-size:11px;letter-spacing:.08em;margin-top:7px;display:block}
+.lodge-price{color:#fff;font-family:var(--serif);font-size:21px;margin-top:10px;display:block}
+.lodge-price small{font:500 9px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-right:5px}
+.lodge-info p{color:rgba(255,255,255,.85);font-size:13px;margin-top:10px;max-height:0;opacity:0;overflow:hidden;transition:all .5s var(--ease)}
+.lodge-card:hover .lodge-info p{max-height:90px;opacity:1}
+.lodge-badge{position:absolute;top:16px;right:16px;z-index:2;background:linear-gradient(120deg,var(--gold),var(--gold-2));color:#fff;font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 13px;border-radius:999px;box-shadow:0 6px 16px rgba(184,134,11,.4)}
+/* ---------- Story / heritage ---------- */
+.story{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.story .pattern{position:absolute;inset:0;opacity:.06;background-image:radial-gradient(circle at 1px 1px,var(--gold) 1px,transparent 1.6px);background-size:34px 34px}
+.story-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.story h2{color:#fff;font-size:clamp(30px,3.8vw,46px);margin:14px 0 18px}
+.story h2 em{color:#e9c96a;font-style:italic}
+.story p{color:rgba(255,255,255,.75);font-weight:300;margin-bottom:16px}
+.story-stats{display:flex;gap:44px;margin:34px 0;flex-wrap:wrap}
+.stat strong{font-family:var(--serif);font-size:44px;color:#e9c96a;display:block;line-height:1}
+.stat span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.story-media{position:relative}
+.story-media .main{border-radius:18px;box-shadow:var(--shadow-lg);aspect-ratio:4/4.7;object-fit:cover;width:100%}
+.story-media .float{position:absolute;width:44%;border-radius:14px;border:6px solid #fff;box-shadow:var(--shadow-md);bottom:-36px;left:-40px}
+.story-media .stamp{position:absolute;top:-28px;right:-24px;width:118px;height:118px;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.conservation{margin-top:0;padding:0}
+.cons-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
+.cons-card{background:rgba(255,255,255,.05);border:1px solid rgba(233,201,106,.18);border-radius:14px;padding:30px;transition:all .4s var(--ease)}
+.cons-card:hover{background:rgba(255,255,255,.09);transform:translateY(-6px);border-color:rgba(233,201,106,.45)}
+.cons-card .ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--gold-2));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.cons-card .ico svg{width:24px;height:24px;stroke:#fff}
+.cons-card h4{color:#fff;font-size:21px;margin-bottom:8px}
+.cons-card p{font-size:13.5px;color:rgba(255,255,255,.65);margin:0}
+/* ---------- Testimonials ---------- */
+.testi{background:var(--ivory)}
+.testi-stage{position:relative;max-width:820px;margin:0 auto;min-height:300px}
+.testi-card{position:absolute;inset:0;background:#fff;border-radius:18px;box-shadow:var(--shadow-sm);padding:52px 60px;text-align:center;opacity:0;transform:translateY(24px) scale(.98);transition:all .7s var(--ease);pointer-events:none;border:1px solid rgba(184,134,11,.14)}
+.testi-card.active{opacity:1;transform:none;pointer-events:auto;position:relative}
+.testi-card .stars{font-size:16px;margin-bottom:16px;display:block}
+.testi-card blockquote{font-family:var(--serif);font-size:clamp(19px,2.4vw,26px);font-style:italic;color:var(--navy);line-height:1.5}
+.testi-who{margin-top:26px;display:flex;align-items:center;justify-content:center;gap:14px}
+.testi-av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#e9c96a;font-family:var(--serif);font-size:20px;display:flex;align-items:center;justify-content:center;border:2px solid var(--gold)}
+.testi-who div{text-align:left}
+.testi-who strong{color:var(--navy);font-size:14px;display:block}
+.testi-who span{font-size:11.5px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.testi-nav{display:flex;justify-content:center;gap:10px;margin-top:34px}
+.testi-nav button{width:10px;height:10px;border-radius:999px;background:rgba(11,43,60,.18);transition:all .4s var(--ease)}
+.testi-nav button.active{width:32px;background:var(--gold)}
+.trust-row{display:flex;justify-content:center;gap:40px;align-items:center;margin-top:48px;flex-wrap:wrap;opacity:.85}
+.trust-row div{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+.trust-row svg{width:20px;height:20px}
+/* ---------- CTA banner ---------- */
+.cta-banner{position:relative;padding:0}
+.cta-inner{position:relative;border-radius:22px;overflow:hidden;padding:80px 8%;text-align:center;box-shadow:var(--shadow-lg)}
+.cta-inner img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta-inner::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(11,43,60,.9),rgba(11,43,60,.55))}
+.cta-inner>*{position:relative;z-index:2}
+.cta-inner h2{color:#fff;font-size:clamp(30px,4vw,50px);max-width:20ch;margin:10px auto 16px}
+.cta-inner p{color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 30px}
+/* ---------- Footer ---------- */
+.site-footer{background:var(--navy);color:rgba(255,255,255,.7);padding:80px 0 0;position:relative;overflow:hidden}
+.footer-logo{height:48px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.18))}
+.site-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:56px}
+.footer-grid h4{color:#fff;font-size:19px;margin-bottom:20px}
+.footer-grid a{display:block;padding:5px 0;font-size:13.5px;transition:all .3s}
+.footer-grid a:hover{color:#e9c96a;padding-left:6px}
+.footer-brand p{font-size:13.5px;margin:16px 0 20px;max-width:300px;font-weight:300}
+.footer-contact li{display:flex;gap:12px;padding:6px 0;font-size:13.5px;list-style:none;align-items:flex-start}
+.footer-contact svg{width:16px;height:16px;stroke:var(--gold);flex-shrink:0;margin-top:3px}
+.newsletter{display:flex;margin-top:16px;border:1px solid rgba(255,255,255,.2);border-radius:999px;overflow:hidden}
+.newsletter input{flex:1;background:transparent;border:none;outline:none;color:#fff;padding:13px 20px;font-family:var(--sans);font-size:13px;min-width:0}
+.newsletter input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter button{background:var(--gold);color:#fff;padding:0 22px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .3s}
+.newsletter button:hover{background:var(--gold-2)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.45)}
+.footer-bottom .script{font-size:22px;color:#e9c96a}
+/* ---------- Mobile bottom bar ---------- */
+.bottom-bar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:105;background:rgba(11,43,60,.94);backdrop-filter:blur(14px);border-radius:18px;box-shadow:var(--shadow-lg);padding:8px;border:1px solid rgba(184,134,11,.35)}
+.bottom-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 4px;color:rgba(255,255,255,.85);font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-radius:12px;transition:all .3s}
+.bottom-bar a svg{width:20px;height:20px}
+.bottom-bar a.gold{background:linear-gradient(120deg,var(--gold),var(--gold-2));color:#fff;box-shadow:0 6px 18px rgba(184,134,11,.4)}
+.bottom-bar a:not(.gold):hover{background:rgba(255,255,255,.08);color:#e9c96a}
+/* ---------- Modal ---------- */
+.modal{position:fixed;inset:0;z-index:130;display:flex;align-items:center;justify-content:center;padding:20px;pointer-events:none}
+.modal .scrim{position:absolute;inset:0;background:rgba(11,43,60,.6);backdrop-filter:blur(6px);opacity:0;transition:opacity .4s}
+.modal .box{position:relative;background:#fff;border-radius:20px;max-width:880px;width:100%;max-height:88vh;overflow-y:auto;transform:translateY(40px) scale(.97);opacity:0;transition:all .5s var(--ease);box-shadow:var(--shadow-lg)}
+.modal.open{pointer-events:auto}
+.modal.open .scrim{opacity:1}
+.modal.open .box{transform:none;opacity:1}
+.modal-media{position:relative;height:320px}
+.modal-media img{width:100%;height:100%;object-fit:cover;border-radius:20px 20px 0 0}
+.modal-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(11,43,60,.7));border-radius:20px 20px 0 0}
+.gallery-arrow{position:absolute;top:50%;z-index:3;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.9);color:var(--navy);box-shadow:0 6px 18px rgba(11,43,60,.2);transform:translateY(-50%);transition:all .3s var(--ease)}
+.gallery-arrow:hover{background:var(--gold);color:#fff}
+.gallery-arrow.prev{left:16px}.gallery-arrow.next{right:16px}
+.gallery-arrow svg{width:18px;height:18px}
+.gallery-dots{position:absolute;right:28px;bottom:25px;z-index:3;display:flex;gap:7px}
+.gallery-dots button{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);box-shadow:0 0 0 1px rgba(11,43,60,.18);transition:all .3s}
+.gallery-dots button.active{width:22px;border-radius:999px;background:var(--gold)}
+.modal-close{position:absolute;top:16px;right:16px;z-index:3;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.modal-close:hover{background:var(--gold);color:#fff;transform:rotate(90deg)}
+.modal-title{position:absolute;bottom:22px;left:30px;z-index:2}
+.modal-title .stars{font-size:13px}
+.modal-title h3{color:#fff;font-size:32px}
+.modal-body{padding:30px}
+.modal-cols{display:grid;grid-template-columns:1.6fr 1fr;gap:30px}
+.modal-body h4{font-size:17px;margin:18px 0 10px;letter-spacing:.04em}
+.modal-body p,.modal-body li{font-size:13.5px;color:var(--muted)}
+.modal-body ul{padding-left:18px}
+.modal-body li{padding:3px 0}
+.modal-aside{background:var(--ivory);border:1px solid rgba(184,134,11,.22);border-radius:14px;padding:24px;height:fit-content;position:sticky;top:0}
+.modal-aside .price strong{font-size:34px}
+.modal-aside ul{list-style:none;padding:0;margin:14px 0 20px}
+.modal-aside li{display:flex;gap:9px;align-items:center;padding:5px 0;font-size:12.5px;color:var(--ink)}
+.modal-aside li svg{width:14px;height:14px;stroke:var(--gold);flex-shrink:0}
+.quote-box{max-width:760px!important}
+.quote-head{padding:34px 38px 22px;border-bottom:1px solid var(--navy-soft)}
+.quote-head .eyebrow{margin-bottom:8px}
+.quote-head h3{font-size:36px}
+.quote-head p{color:var(--muted);margin-top:8px}
+.quote-form{padding:28px 38px 38px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.quote-field{display:flex;flex-direction:column;gap:7px}
+.quote-field.full{grid-column:1/-1}
+.quote-field label{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.quote-field input,.quote-field select,.quote-field textarea{width:100%;border:1px solid rgba(11,43,60,.16);background:var(--ivory);border-radius:10px;padding:13px 14px;color:var(--navy);font:500 13px var(--sans);outline:none;transition:.3s}
+.quote-field input:focus,.quote-field select:focus,.quote-field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft);background:#fff}
+.quote-field textarea{min-height:105px;resize:vertical}
+.quote-submit{grid-column:1/-1;display:flex;align-items:center;gap:16px;justify-content:space-between;margin-top:4px}
+.quote-submit small{color:var(--muted);max-width:360px}
+.form-status{grid-column:1/-1;color:var(--navy);font-size:13px;display:none}
+.form-status.show{display:block}
+/* ---------- Toast ---------- */
+.toast{position:fixed;bottom:100px;left:50%;transform:translate(-50%,20px);background:var(--navy);color:#fff;padding:15px 28px;border-radius:999px;font-size:13px;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:all .5s var(--ease);z-index:140;border:1px solid rgba(184,134,11,.5);display:flex;gap:10px;align-items:center;max-width:90%}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast svg{width:16px;height:16px;stroke:var(--gold)}
+/* ---------- Responsive ---------- */
+@media(max-width:1080px){
+  .pkg-grid,.lodge-grid{grid-template-columns:repeat(2,1fr)}
+  .lodge-card:nth-child(2),.lodge-card:nth-child(5){transform:none}
+  .search-bar{grid-template-columns:1fr 1fr;max-width:640px}
+  .search-bar .btn{grid-column:1/-1;min-height:56px;border-radius:12px}
+  .search-field:nth-of-type(2)::after{display:none}
+  .story-grid{grid-template-columns:1fr;gap:60px}
+  .cons-cards{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .nav-links,.header-cta .btn{display:none}
+  .nav-toggle{display:flex}
+  .bottom-bar{display:flex}
+  .section{padding:76px 0}
+  body{padding-bottom:74px}
+  .hero{padding-bottom:130px}
+  .search-bar{margin-top:-104px;grid-template-columns:1fr;padding:14px;gap:8px}
+  .search-field{background:var(--ivory)}
+  .search-field::after{display:none}
+  .hero-dots{flex-direction:row;right:auto;left:50%;transform:translateX(-50%);bottom:auto;top:110px}
+  .scroll-hint{display:none}
+  .pkg-grid,.lodge-grid,.cons-cards{grid-template-columns:1fr}
+  .testi-card{padding:38px 26px}
+  .modal-cols{grid-template-columns:1fr}
+  .modal-aside{position:static}
+  .modal-media{height:220px}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .story-media .float{left:-10px}
+  .trust-row{gap:22px}
+}
+@media(max-width:520px){
+  .filter-row{gap:8px}
+  .chip{padding:9px 15px;font-size:10px}
+  .hero-actions .btn{width:100%}
+  .quote-form{grid-template-columns:1fr;padding:24px}
+  .quote-head{padding:28px 24px 18px}
+  .quote-field.full,.quote-submit{grid-column:auto}
+  .quote-submit{align-items:stretch;flex-direction:column}
+}
+@media(min-width:821px){
+  .site-footer{margin-top:72px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ======= HEADER ======= -->
+<header class="site-header on-hero" id="siteHeader">
+  <div class="container">
+    <a href="#" class="brand" aria-label="EastAfricaExplore home">
+      <img src="images/logo1.png" alt="EastAfricaExplore Tours and Travels logo" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-name">EastAfricaExplore</span>
+        <span class="brand-sub">Tours &amp; Travels</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#destinations">Destinations</a>
+      <a href="#lodges">Hotels &amp; Stays</a>
+      <a href="#packages">Safari Experiences</a>
+      <a href="#story">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <button type="button" class="btn btn-gold" data-quote>Plan Your Safari</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ======= MOBILE DRAWER ======= -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <nav class="panel" aria-label="Mobile">
+    <a class="d-link" href="#destinations">Destinations <span>Kenya · Tanzania · Zanzibar</span></a>
+    <a class="d-link" href="#lodges">Hotels &amp; Stays <span>Camps · Lodges · Resorts</span></a>
+    <a class="d-link" href="#packages">Safari Experiences <span>Signature Journeys</span></a>
+    <a class="d-link" href="#story">About Us <span>Our Story</span></a>
+    <a class="d-link" href="#contact">Contact <span>Enquire</span></a>
+    <button type="button" class="btn btn-gold" data-quote>Plan Your Safari</button>
+    <div class="d-contact">
+      <strong>+254 724 828 919</strong><br>
+      <a href="mailto:hello@eastafricaexplore.com">hello@eastafricaexplore.com</a><br>
+      Nairobi · Kenya · East Africa
+    </div>
+  </nav>
+</div>
+
+<!-- ======= HERO ======= -->
+<section class="hero" id="destinations">
+  <div class="hero-slides" aria-hidden="true">
+    <div class="hero-slide active"><img src="images/elephant3.jpeg" alt="Elephant on the East African savannah" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="images/hotair3.jpeg" alt="Hot air balloons drifting over the savannah at dawn" loading="lazy"></div>
+    <div class="hero-slide"><img src="images/savannah4.jpg" alt="Wildlife crossing the golden savannah" loading="lazy"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">Tours &amp; Travels</span>
+    <h1>Where the <em>Wild</em> Meets Wonder</h1>
+    <p class="hero-sub">Bespoke luxury safaris across Kenya, Tanzania and Zanzibar — private guides, handpicked camps, and journeys written around you.</p>
+    <div class="hero-actions">
+      <a href="#lodges" class="btn btn-gold">Explore Hotels &amp; Stays
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#packages" class="btn btn-white">Curated Safari Experiences</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots">
+    <button class="active" aria-label="Slide 1"></button>
+    <button aria-label="Slide 2"></button>
+    <button aria-label="Slide 3"></button>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ======= SEARCH BAR ======= -->
+<form class="search-bar" id="searchBar" aria-label="Find a hotel or stay">
+  <div class="search-field">
+    <label for="fDest"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Destination</label>
+    <select id="fDest" name="destination">
+      <option value="all">Anywhere in East Africa</option>
+      <option value="masai-mara">Masai Mara, Kenya</option>
+      <option value="serengeti">Serengeti, Tanzania</option>
+      <option value="amboseli">Amboseli, Kenya</option>
+      <option value="diani">Diani Beach, Kenya</option>
+      <option value="zanzibar">Zanzibar, Tanzania</option>
+    </select>
+  </div>
+  <div class="search-field">
+    <label for="fDur"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Stay Length</label>
+    <select id="fDur" name="duration">
+      <option value="any">Any length</option>
+      <option value="short">1–3 nights</option>
+      <option value="mid">4–6 nights</option>
+      <option value="long">7+ nights</option>
+    </select>
+  </div>
+  <div class="search-field">
+    <label for="fDate"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Travel Dates</label>
+    <input type="date" id="fDate" name="dates">
+  </div>
+  <div class="search-field">
+    <label for="fStyle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 15.6 7 18.4l1.1-5.6L4 8.9l5.6-.7z"/></svg>Stay Style</label>
+    <select id="fStyle" name="style">
+      <option value="any">Any style</option>
+      <option value="luxury">Luxury</option>
+      <option value="family">Family</option>
+      <option value="honeymoon">Honeymoon</option>
+      <option value="beach">Beach</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-gold">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    Search
+  </button>
+</form>
+
+<!-- ======= HOTELS & STAYS CATALOGUE ======= -->
+<section class="section" id="lodges">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Hotels &amp; Stays</span>
+      <h2>Stay Somewhere Extraordinary</h2>
+      <p>From landmark city hotels and tented suites on the Mara plains to private villas on the Swahili coast — stays chosen for service, setting and soul.</p>
+    </div>
+    <div class="filter-row reveal" id="filterRow">
+      <button class="chip active" data-filter="all">All Stays</button>
+      <button class="chip" data-filter="masai-mara">Masai Mara</button>
+      <button class="chip" data-filter="serengeti">Serengeti</button>
+      <button class="chip" data-filter="diani">Diani Beach</button>
+      <button class="chip" data-filter="zanzibar">Zanzibar</button>
+      <button class="chip" data-filter="family">Family</button>
+    </div>
+    <div class="pkg-grid" id="pkgGrid"></div>
+    <div class="grid-empty" id="gridEmpty">No stays match your search — widen your filters or ask us to source the perfect property.</div>
+  </div>
+</section>
+
+<!-- ======= CURATED SAFARI EXPERIENCES ======= -->
+<section class="section lodges" id="packages">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Signature Journeys</span>
+      <h2>Curated Safari Experiences</h2>
+      <p>A select collection of handcrafted journeys through East Africa's greatest wilderness — each private, flexible and timed around the season's best wildlife moments.</p>
+    </div>
+    <div class="lodge-grid" id="lodgeGrid"></div>
+    <div class="arc-divider reveal" style="margin-top:64px" aria-hidden="true">
+      <svg viewBox="0 0 220 56" fill="none">
+        <path d="M20 52a90 90 0 0 1 180 0" stroke="#B8860B" stroke-width="1.6"/>
+        <path d="M44 52a66 66 0 0 1 132 0" stroke="#B8860B" stroke-width="1.3" opacity=".6"/>
+        <path d="M68 52a42 42 0 0 1 84 0" stroke="#B8860B" stroke-width="1.1" opacity=".35"/>
+        <circle cx="110" cy="28" r="4" fill="#B8860B"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ======= STORY & CONSERVATION ======= -->
+<section class="section story" id="story">
+  <div class="pattern" aria-hidden="true"></div>
+  <div class="container">
+    <div class="story-grid">
+      <div class="reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>Rooted in the Land, <em>Guided by Its People</em></h2>
+        <p>EastAfricaExplore was born on the Kenyan savannah — founded by guides, hosts and conservationists who believe a safari should change the traveller <em>and</em> the place it touches.</p>
+        <p>Every itinerary is bespoke: built around the Great Migration's rhythm, your pace, and the quiet corners of East Africa most travellers never see.</p>
+        <div class="story-stats">
+          <div class="stat"><strong>15+</strong><span>Years Crafting Safaris</span></div>
+          <div class="stat"><strong>4,800</strong><span>Happy Travellers</span></div>
+          <div class="stat"><strong>96%</strong><span>Would Recommend</span></div>
+        </div>
+        <a href="#cta" class="btn btn-gold">Start Your Story
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="story-media reveal">
+        <img class="main" src="images/maasai3.jpeg" alt="A Maasai guide in the East African landscape" loading="lazy">
+        <img class="float" src="images/maasai1.jpeg" alt="Traditional Maasai cultural experience" loading="lazy">
+        <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <circle cx="60" cy="60" r="58" fill="rgba(184,134,11,.15)" stroke="#B8860B"/>
+          <circle cx="60" cy="60" r="30" fill="none" stroke="#B8860B" stroke-width="1"/>
+          <text font-size="10.5" letter-spacing="2.5" fill="#0B2B3C" font-family="Montserrat,sans-serif" font-weight="600">
+            <textPath href="#circ">EASTAFRICAEXPLORE • TOURS &amp; TRAVELS • EST. 2011 •</textPath>
+          </text>
+          <path d="M46 66a14 14 0 0 1 28 0" stroke="#B8860B" stroke-width="2" fill="none"/>
+          <circle cx="60" cy="56" r="3.5" fill="#B8860B"/>
+        </svg>
+      </div>
+    </div>
+    <div class="cons-cards">
+      <div class="cons-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></div>
+        <h4>Conservation First</h4>
+        <p>5% of every booking funds anti-poaching patrols and habitat restoration in the Mara-Serengeti ecosystem.</p>
+      </div>
+      <div class="cons-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.4 2.8-5 5.5-5s4.9 1.6 5.5 5M16 4.5a3.2 3.2 0 0 1 0 7M17.5 15c2 .5 3.1 2 3.5 5"/></svg></div>
+        <h4>Community Owned</h4>
+        <p>Maasai and Samburu partners co-host our cultural experiences — with fair wages woven into every itinerary.</p>
+      </div>
+      <div class="cons-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18.4 5.6l-2.1 2.1M21 12h-3M7 17a7 7 0 0 1 10 0M9 20h6"/></svg></div>
+        <h4>Carbon-Conscious Travel</h4>
+        <p>Small-group vehicles, solar-powered camps and offset flights keep your footprint as light as a balloon at dawn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TESTIMONIALS ======= -->
+<section class="section testi" id="reviews">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Traveller Stories</span>
+      <h2>Loved Across the World</h2>
+      <p>Rated 4.9/5 across TripAdvisor and Google by thousands of safari travellers.</p>
+    </div>
+    <div class="testi-stage reveal" id="testiStage"></div>
+    <div class="testi-nav" id="testiNav"></div>
+    <div class="trust-row reveal">
+      <div><svg viewBox="0 0 24 24" fill="#00AA6C"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 7.4l-5.3 6.2c-.2.2-.5.4-.8.4h-.2c-.3 0-.6-.1-.8-.4l-2.4-2.9c-.4-.4-.3-1 .1-1.4.4-.4 1-.3 1.4.1l1.6 1.9 4.5-5.3c.3-.4 1-.5 1.4-.1.4.4.5 1.1.1 1.5z"/></svg>TripAdvisor Travelers' Choice</div>
+      <div><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M21.6 12.2c0-.7-.06-1.4-.18-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" fill="#34A853"/><path d="M6.4 13.9a6 6 0 0 1 0-3.8V7.5H3.1a10 10 0 0 0 0 9l3.3-2.6z" fill="#FBBC05"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.8 9.4 5.9 12 5.9z" fill="#EA4335"/></svg>4.9 on Google Reviews</div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="#B8860B" stroke-width="1.8"><path d="M12 3l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 15.6 7 18.4l1.1-5.6L4 8.9l5.6-.7z"/></svg>ATOL-Style Protected Journeys</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CTA BANNER ======= -->
+<section class="section cta-banner" id="cta">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <img class="bg" src="images/hotbaloon.jpeg" alt="" loading="lazy" aria-hidden="true">
+      <span class="script" style="font-size:clamp(24px,3vw,34px)">Your journey begins here</span>
+      <h2>Tell Us Your Dream — We'll Draw the Map</h2>
+      <p>Private safari designer, no obligation, reply within 24 hours. Honeymoon, family adventure or bucket-list migration chase — we tailor it all.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <button type="button" class="btn btn-gold" data-quote>Request a Custom Journey</button>
+        <a href="https://wa.me/254724828919?text=Hello%20EastAfricaExplore%2C%20I%27d%20like%20a%20custom%20safari%20quotation." target="_blank" rel="noopener" class="btn btn-gold">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.2 1.4z"/></svg>
+          WhatsApp Us</a>
+        <a href="tel:+254724828919" class="btn btn-white">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>
+          Call a Safari Designer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand" aria-label="EastAfricaExplore home">
+          <img src="images/logo1.png" alt="EastAfricaExplore Tours and Travels logo" class="footer-logo">
+          <span class="brand-text">
+            <span class="brand-name" style="color:#fff">EastAfricaExplore</span>
+            <span class="brand-sub">Tours &amp; Travels</span>
+          </span>
+        </a>
+        <p>Bespoke luxury safaris and coastal escapes across East Africa — crafted by locals, remembered forever.</p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="Your email for safari inspiration" required aria-label="Email address">
+          <button type="submit">Join</button>
+        </form>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <a href="#destinations">Kenya</a><a href="#destinations">Tanzania</a><a href="#destinations">Zanzibar</a><a href="#destinations">Uganda &amp; Rwanda</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#lodges">Hotels &amp; Stays</a><a href="#packages">Safari Experiences</a><a href="#story">About Us</a><a href="#reviews">Reviews</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Westlands, Nairobi, Kenya</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>+254 724 828 919</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg><a href="mailto:hello@eastafricaexplore.com">hello@eastafricaexplore.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EastAfricaExplore Tours &amp; Travels. All rights reserved.</span>
+      <span class="script">Karibu — you are most welcome</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======= MOBILE BOTTOM BAR ======= -->
+<nav class="bottom-bar" aria-label="Quick actions">
+  <a href="tel:+254724828919">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>
+    Call Us</a>
+  <a class="gold" href="https://wa.me/254724828919?text=Hello%20EastAfricaExplore%2C%20I%27d%20like%20to%20enquire%20about%20a%20safari." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.4 0 .1 0 .8-.2 1.4z"/></svg>
+    WhatsApp</a>
+  <a href="#cta" data-quote>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>
+    Get a Quote</a>
+</nav>
+
+<!-- ======= MODAL ======= -->
+<div class="modal" id="pkgModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="scrim" data-close></div>
+  <div class="box">
+    <div class="modal-media">
+      <img id="mImg" src="" alt="">
+      <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous destination image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="gallery-arrow next" id="galleryNext" aria-label="Next destination image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+      <button class="modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-title"><span class="stars" id="mStars"></span><h3 id="mTitle"></h3></div>
+      <div class="gallery-dots" id="galleryDots" aria-label="Destination gallery"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-cols">
+        <div>
+          <h4>The Stay</h4>
+          <p id="mDesc"></p>
+          <h4>Property Highlights</h4>
+          <ul id="mHighlights"></ul>
+        </div>
+        <aside class="modal-aside">
+          <div class="price"><small>From, per night</small><strong id="mPrice"></strong></div>
+          <ul id="mIncludes"></ul>
+          <a id="mAffiliate" href="https://wa.me/254724828919?text=I%27m%20interested%20in%20a%20hotel%20or%20stay" target="_blank" rel="sponsored noopener" class="btn btn-gold" style="width:100%">Enquire Now</a>
+          <a id="mBookNow" href="#" target="_blank" rel="sponsored noopener" class="btn btn-outline" style="width:100%;margin-top:10px">Book Now</a>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= ENQUIRY MODAL ======= -->
+<div class="modal" id="quoteModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+  <div class="scrim" data-quote-close></div>
+  <div class="box quote-box">
+    <button class="modal-close" data-quote-close aria-label="Close enquiry form">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="quote-head">
+      <span class="eyebrow">Private Safari Design</span>
+      <h3 id="quoteTitle">Let’s plan something remarkable.</h3>
+      <p>Share the essentials. A safari designer will shape the first ideas around you.</p>
+    </div>
+    <form class="quote-form" id="quoteForm">
+      <div class="quote-field"><label for="qName">Your name *</label><input id="qName" name="name" autocomplete="name" required></div>
+      <div class="quote-field"><label for="qEmail">Email address *</label><input id="qEmail" name="email" type="email" autocomplete="email" required></div>
+      <div class="quote-field"><label for="qPhone">Phone / WhatsApp</label><input id="qPhone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="quote-field"><label for="qDestination">Dream destination</label><select id="qDestination" name="destination"><option>I'm open to ideas</option><option>Kenya</option><option>Tanzania</option><option>Zanzibar</option><option>Uganda or Rwanda</option><option>Multi-country journey</option></select></div>
+      <div class="quote-field"><label for="qDates">Travel dates</label><input id="qDates" name="travelDates" placeholder="e.g. August 2027"></div>
+      <div class="quote-field"><label for="qStyle">Travel style</label><select id="qStyle" name="travelStyle"><option>Luxury</option><option>Honeymoon</option><option>Family</option><option>Adventure</option><option>Bush & beach</option></select></div>
+      <div class="quote-field full"><label for="qMessage">What would make this journey unforgettable?</label><textarea id="qMessage" name="message" placeholder="Tell us about your group, ideal pace, special occasion or must-see experiences."></textarea></div>
+      <p class="form-status" id="quoteStatus" role="status"></p>
+      <div class="quote-submit"><small>No obligation. Your details are used only to plan this enquiry.</small><button class="btn btn-gold" type="submit">Send My Enquiry</button></div>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ================= DATA ================= */
+let SAFARIS=[
+ {id:1,title:"Masai Mara Migration Expedition",img:"images/elephant2.jpeg",loc:"Masai Mara · Kenya",tags:["masai-mara","luxury","adventure"],dur:"7 Days / 6 Nights",durKey:"mid",price:"$4,850 USD",tier:5,stars:5,
+  blurb:"Follow the Great Migration's river crossings from a private conservancy camp, with dawn game drives and golden-hour sundowners.",
+  desc:"Seven days in Kenya's flagship reserve, timed to the Migration. Stay in an intimate luxury tented camp on a private conservancy, enjoy off-road driving, night drives and a sunrise balloon safari over the Mara River.",
+  highlights:["Great Migration river crossings (Jul–Oct)","Private conservancy: off-road & night drives","Sunrise hot-air balloon with bush breakfast","Big Five tracking with Maasai naturalist guides"],
+  includes:["All meals & premium drinks","Private 4x4 safari vehicle","Park & conservancy fees","Nairobi return flights"]},
+ {id:2,title:"Serengeti Endless Plains Classic",img:"images/safari1.jpeg",loc:"Serengeti · Tanzania",tags:["serengeti","luxury"],dur:"8 Days / 7 Nights",durKey:"mid",price:"$5,620 USD",tier:5,stars:5,
+  blurb:"The predator capital of the world — lion, cheetah and leopard on infinite golden plains, ending at a crater-rim lodge.",
+  desc:"From Arusha to the Seronera valley and the Ndutu plains, this classic circuit pairs tented luxury with unbeatable big-cat sightings, and finishes on the rim of the Ngorongoro Crater.",
+  highlights:["Big-cat territory in Central Serengeti","Ngorongoro Crater floor descent","Luxury tented camp under acacia trees","Optional dawn balloon over the plains"],
+  includes:["Full-board luxury camps","Crater & park fees","Professional English-speaking guide","Airport transfers"]},
+ {id:3,title:"Amboseli & Kilimanjaro Views",img:"images/elephant.jpeg",loc:"Amboseli · Kenya",tags:["amboseli","family"],dur:"4 Days / 3 Nights",durKey:"short",price:"$2,190 USD",tier:4,stars:4.5,
+  blurb:"Huge-tusked elephants beneath snow-capped Kilimanjaro — the classic family safari, gentle, scenic and endlessly photogenic.",
+  desc:"A short, sweet escape to Amboseli's elephant herds and swamp wetlands, with family-friendly guiding, a Maasai village visit and unbeatable views of Africa's highest peak.",
+  highlights:["Large-tusked elephant herds","Kilimanjaro sunrise photography","Maasai village cultural visit","Observation Hill sundowners"],
+  includes:["Family suites & kids' activities","All park fees","Private guide & vehicle","Full board"]},
+ {id:4,title:"Diani Beach & Bush Combo",img:"images/ocean1.jpeg",loc:"Diani Beach · Kenya",tags:["diani","honeymoon","family"],dur:"9 Days / 8 Nights",durKey:"long",price:"$4,980 USD",tier:5,stars:5,
+  blurb:"Three days of safari thrills, then five barefoot-luxury days on powder-white Diani — the best of both East African worlds.",
+  desc:"Begin with elephants and lions in Tsavo, then fly to the turquoise coast. Private plunge-pool villa, dhow sunset sails, snorkelling the Kisite reef and a romantic beach dinner under the stars.",
+  highlights:["Safari + beach in one seamless trip","Private plunge-pool beach villa","Dhow sunset sail & reef snorkelling","Couples' spa ritual & private dining"],
+  includes:["Internal flights included","Half-board beach villa","All safari logistics","Honeymoon extras on request"]},
+ {id:5,title:"Zanzibar Spice Island Escape",img:"images/zanzibar1.jpeg",loc:"Zanzibar · Tanzania",tags:["zanzibar","honeymoon"],dur:"6 Days / 5 Nights",durKey:"mid",price:"$3,450 USD",tier:4,stars:4.5,
+  blurb:"Stone Town's winding alleys, spice farms, and an adults-only resort on a private stretch of Nungwi sand.",
+  desc:"A romantic island circuit: two nights in historic Stone Town with a private spice tour, then barefoot luxury on the north coast — dhow cruises, turquoise lagoons and Swahili-inspired seafood.",
+  highlights:["Private Stone Town & spice farm tour","Adults-only beach resort","Mnemba Atoll snorkelling day trip","Sunset dhow cruise with dinner"],
+  includes:["Resort stay, half board","All excursions with private guide","Airport & ferry transfers","Honeymoon setup on request"]},
+ {id:6,title:"Balloon & Big Five Luxury",img:"images/hotair.jpeg",loc:"Masai Mara · Kenya",tags:["masai-mara","honeymoon","luxury"],dur:"5 Days / 4 Nights",durKey:"short",price:"$3,890 USD",tier:5,stars:5,
+  blurb:"A champagne balloon flight at first light, landing to a full bush breakfast — then afternoons chasing the Big Five in style.",
+  desc:"Short on days, long on memory: an ultra-luxury Mara fly-in with a sunrise balloon safari, riverbank camp, private vehicle throughout and a special-occasion dinner in the bush.",
+  highlights:["Champagne balloon safari & bush breakfast","Fly-in convenience from Nairobi","Riverbank luxury tented suite","Private vehicle & valet guiding"],
+  includes:["Return scheduled flights","Balloon safari included","All meals & house drinks","Conservancy fees"]}
+];
+const PACKAGE_GALLERIES={
+  1:["images/interior3.jpeg","images/savannah3.webp","images/elephant2.jpeg","images/maasai2.jpeg"],
+  2:["images/interoir4.jpg","images/savannah.jpeg","images/safari1.jpeg","images/hotair3.jpeg"],
+  3:["images/interior1.jpg","images/ocean1.jpeg","images/ocean2.jpeg","images/ocean4.jpg"],
+  4:["images/ocean3.webp","images/zanzibar1.jpeg","images/zanzibar2.jpeg","images/interior1.jpg"],
+  5:["images/savannah3.webp","images/elephant.jpeg","images/elephant3.jpeg","images/savanah2.jpg"],
+  6:["images/ocean4.jpg","images/ocean3.webp","images/zanzibar2.jpeg","images/interior1.jpg"]
+};
+let PACKAGES=[
+ {id:1,title:"Mara Horizon Tented Camp",loc:"Masai Mara · Kenya",img:"images/interior3.jpeg",tags:["masai-mara","luxury","honeymoon"],dur:"Luxury Camp",durKey:"short",price:"$920 USD",tier:5,stars:5,
+  blurb:"Glass-fronted tented suites overlooking the Mara, with full-board dining and expertly guided daily game drives.",desc:"An intimate luxury camp set close to the wildlife corridors of the Masai Mara. Spacious suites, private decks and attentive hosting create a refined base for game drives, sundowners and unhurried days in the bush.",highlights:["Private deck with sweeping Mara views","Morning and evening guided game drives","Full-board dining and selected drinks","Personalized service and bush sundowners"],includes:["Full-board accommodation","Two shared game drives daily","Selected house drinks","Airstrip transfers"]},
+ {id:2,title:"Acacia Ridge Safari Lodge",loc:"Serengeti · Tanzania",img:"images/interoir4.jpg",tags:["serengeti","luxury","family"],dur:"Safari Lodge",durKey:"mid",price:"$780 USD",tier:5,stars:5,
+  blurb:"A sophisticated Serengeti lodge pairing an infinity pool and spa with uninterrupted views across the plains.",desc:"Contemporary suites sit lightly above the Serengeti landscape, combining serene interiors with easy access to exceptional wildlife areas. Ideal for couples and families who want comfort without losing a sense of place.",highlights:["Infinity pool above the plains","Spacious family and couple suites","Spa treatments and private dining","Central access to Serengeti game areas"],includes:["All-inclusive accommodation","Scheduled game drives","Meals and selected beverages","Local airstrip transfers"]},
+ {id:3,title:"Cliffside Ocean Retreat",loc:"Diani Beach · Kenya",img:"images/interior1.jpg",tags:["diani","beach","honeymoon"],dur:"Beach Hotel",durKey:"short",price:"$420 USD",tier:4,stars:5,
+  blurb:"An ocean-facing retreat with airy suites, exceptional views and the powder-soft sands of Diani close at hand.",desc:"A calm coastal hideaway designed around the Indian Ocean. Wake to blue-water views, spend the afternoon by the beach and return to understated interiors and warm Kenyan hospitality.",highlights:["Panoramic Indian Ocean views","Direct access to Diani Beach","Ocean-view dining and wellness","Romantic and honeymoon arrangements"],includes:["Daily breakfast","Airport transfers","Beach concierge","Complimentary Wi-Fi"]},
+ {id:4,title:"The Palms Beach Villas",loc:"Zanzibar · Tanzania",img:"images/ocean3.webp",tags:["zanzibar","beach","honeymoon"],dur:"Private Villa",durKey:"mid",price:"$640 USD",tier:5,stars:5,
+  blurb:"Private-pool villas, attentive butler service and barefoot luxury on a quiet stretch of Zanzibar coastline.",desc:"A secluded villa stay shaped for privacy and romance. Each villa offers generous indoor-outdoor living, a private pool and effortless access to warm turquoise water and Swahili-inspired dining.",highlights:["Private plunge pool and terrace","Quiet beachfront setting","Butler service on request","Dhow cruises and island excursions"],includes:["Half-board accommodation","Private villa host","Airport transfers","Daily housekeeping"]},
+ {id:5,title:"Baobab Savannah Camp",loc:"Amboseli · Kenya",img:"images/savannah3.webp",tags:["amboseli","family","luxury"],dur:"Family Camp",durKey:"mid",price:"$510 USD",tier:4,stars:4.5,
+  blurb:"A welcoming family camp with canvas suites, child-friendly activities and Kilimanjaro on the horizon.",desc:"Designed for relaxed multigenerational stays, Baobab Savannah Camp combines comfortable family tents with flexible meals, engaging junior-ranger activities and easy access to Amboseli's elephant country.",highlights:["Family tents with connected rooms","Kilimanjaro sunrise views","Junior-ranger activities","Flexible family dining"],includes:["Full-board accommodation","Family game drives","Kids' activities","Park transfers"]},
+ {id:6,title:"Coral Cove Resort & Spa",loc:"Zanzibar · Tanzania",img:"images/ocean4.jpg",tags:["zanzibar","beach","family"],dur:"Island Resort",durKey:"long",price:"$560 USD",tier:5,stars:5,
+  blurb:"A full-service island resort with lagoon access, restorative wellness and spacious suites for couples and families.",desc:"Swahili-inspired architecture wraps around tropical gardens and a turquoise lagoon. The resort brings together beach days, water sports, restorative spa rituals and flexible dining in one seamless stay.",highlights:["Lagoon and beachfront access","Full-service spa and wellness","Family suites and water activities","Multiple restaurants and private dining"],includes:["Daily breakfast","Non-motorized water sports","Resort activities","Airport transfers"]}
+];
+const TESTIMONIALS=[
+ {q:"The Migration crossing happened twenty metres from our vehicle. Our guide knew exactly where to be — this was travel as art, not tourism.",n:"Sarah & James Whitfield",w:"Honeymoon · Masai Mara",stars:5},
+ {q:"Every lodge felt like a jewel and the kids still talk about the Maasai warriors who taught them to throw a spear. Flawless from landing to goodbye.",n:"The Okafor Family",w:"Family Safari · Kenya & Tanzania",stars:5},
+ {q:"Diani after the Serengeti was the smartest itinerary decision ever. One team handled everything — we just watched elephants at dawn and cocktails at dusk.",n:"Daniel Moreau",w:"Bush & Beach · 9 Days",stars:5},
+ {q:"Zanzibar at their partner resort was the most romantic week of our lives. The private dhow dinner under a full moon — unreal.",n:"Amara & Kofi Mensah",w:"Honeymoon · Zanzibar",stars:4.5}
+];
+
+/* ================= HELPERS ================= */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const starStr=r=>"★★★★★".slice(0,Math.floor(r))+(r%1?"½":"");
+const tierStr=t=>`<span class="tier" title="Price tier ${t}/5">${Array.from({length:5},(_,i)=>`<i class="${i<t?"on":""}"></i>`).join("")}</span>`;
+function toast(msg){const t=$("#toast");t.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><span>${msg}</span>`;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("show"),3200);}
+
+/* ================= RENDER PACKAGES ================= */
+const grid=$("#pkgGrid");
+function cardHTML(p){return `
+<article class="pkg-card reveal visible" data-tags="${p.tags.join(" ")}" data-dur="${p.durKey}" data-id="${p.id}" tabindex="0" role="button" aria-label="${p.title}">
+  <div class="pkg-media">
+    <img src="${p.img}" alt="${p.title}" loading="lazy">
+    <span class="loc-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.6-7-11a7 7 0 1 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>${p.loc}</span>
+    <button class="wish" aria-label="Save to wishlist" data-wish><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></button>
+    <span class="dur-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${p.dur}</span>
+  </div>
+  <div class="pkg-body">
+    <div class="pkg-stars"><span class="stars">${starStr(p.stars)}</span>${p.stars.toFixed(1)} · ${tierStr(p.tier)}</div>
+    <h3>${p.title}</h3>
+    <p>${p.blurb}</p>
+    <div class="pkg-meta">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Curated property</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Concierge support</span>
+    </div>
+    <div class="pkg-foot">
+      <div class="price"><small>From / night</small><strong>${p.price.split(" ")[0]}<span> ${p.price.split(" ")[1]||"USD"}</span></strong></div>
+      <span class="pkg-link">Quick View <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+  </div>
+</article>`;}
+function renderHotels(){grid.innerHTML=PACKAGES.map(cardHTML).join("");}
+renderHotels();
+
+/* wishlist */
+grid.addEventListener("click",e=>{
+  const w=e.target.closest("[data-wish]");
+  if(w){e.stopPropagation();w.classList.toggle("active");toast(w.classList.contains("active")?"Saved to your wishlist ♥":"Removed from wishlist");return;}
+  const card=e.target.closest(".pkg-card");
+  if(card)openModal(+card.dataset.id);
+});
+grid.addEventListener("keydown",e=>{
+  if(e.key==="Enter"){const card=e.target.closest(".pkg-card");if(card)openModal(+card.dataset.id);}
+});
+
+/* ================= FILTERS (chips + search bar) ================= */
+function applyFilters(){
+  const chip=$("#filterRow .chip.active")?.dataset.filter||"all";
+  const dest=$("#fDest").value, dur=$("#fDur").value, style=$("#fStyle").value;
+  let count=0;
+  $$(".pkg-card").forEach(c=>{
+    const tags=c.dataset.tags.split(" ");
+    const okChip=chip==="all"||tags.includes(chip);
+    const okDest=dest==="all"||tags.includes(dest);
+    const okDur=dur==="any"||c.dataset.dur==="any"||c.dataset.dur===dur;
+    const okStyle=style==="any"||tags.includes(style);
+    const show=okChip&&okDest&&okDur&&okStyle;
+    c.classList.toggle("hide",!show);
+    if(show)count++;
+  });
+  $("#gridEmpty").style.display=count?"none":"block";
+}
+$("#filterRow").addEventListener("click",e=>{
+  const b=e.target.closest(".chip");if(!b)return;
+  $$("#filterRow .chip").forEach(c=>c.classList.remove("active"));
+  b.classList.add("active");applyFilters();
+});
+$("#searchBar").addEventListener("submit",e=>{
+  e.preventDefault();
+  $$("#filterRow .chip").forEach(c=>c.classList.toggle("active",c.dataset.filter==="all"));
+  applyFilters();
+  document.getElementById("lodges").scrollIntoView({behavior:"smooth"});
+  const n=$$(".pkg-card:not(.hide)").length;
+  toast(n?`${n} stay${n>1?"s":""} match your search`:"No exact match — here are our closest stays");
+});
+
+/* ================= CURATED SAFARIS ================= */
+function renderSafaris(){$("#lodgeGrid").innerHTML=SAFARIS.map((l,i)=>`
+<div class="lodge-card reveal visible" style="transition-delay:${i*70}ms" role="img" aria-label="${l.title}">
+  <img src="${l.img}" alt="${l.title}" loading="lazy">
+  ${i===0?`<span class="lodge-badge">Signature Journey</span>`:""}
+  <div class="lodge-info">
+    <span class="stars">${starStr(l.stars)}</span>
+    <h3>${l.title}</h3>
+    <span class="loc">${l.loc}</span>
+    <span class="lodge-meta">${l.dur} · Private journey</span>
+    <span class="lodge-price"><small>From / person</small>${l.price.split(" ")[0]}</span>
+    <p>${l.blurb}</p>
+  </div>
+</div>`).join("");}
+renderSafaris();
+
+/* ================= MODAL ================= */
+const modal=$("#pkgModal");
+let activeGallery=[],activeGalleryIndex=0,activePackage=null;
+function showGalleryImage(index){
+  if(!activeGallery.length)return;
+  activeGalleryIndex=(index+activeGallery.length)%activeGallery.length;
+  const image=$("#mImg");
+  image.src=activeGallery[activeGalleryIndex];
+  image.alt=`${activePackage.title} — image ${activeGalleryIndex+1} of ${activeGallery.length}`;
+  $$("#galleryDots button").forEach((dot,i)=>dot.classList.toggle("active",i===activeGalleryIndex));
+}
+function setGallery(p){
+  activePackage=p;activeGallery=PACKAGE_GALLERIES[p.id]||[p.img];activeGalleryIndex=0;
+  $("#galleryDots").innerHTML=activeGallery.map((_,i)=>`<button class="${i===0?"active":""}" aria-label="Show image ${i+1} of ${activeGallery.length}" data-gallery-index="${i}"></button>`).join("");
+  showGalleryImage(0);
+  const multiple=activeGallery.length>1;
+  $("#galleryPrev").hidden=!multiple;$("#galleryNext").hidden=!multiple;$("#galleryDots").hidden=!multiple;
+}
+function openModal(id){
+  const p=PACKAGES.find(x=>x.id===id);if(!p)return;
+  setGallery(p);
+  $("#mTitle").textContent=p.title;$("#mStars").textContent=starStr(p.stars);
+  $("#mDesc").textContent=p.desc;
+  $("#mHighlights").innerHTML=p.highlights.map(h=>`<li>${h}</li>`).join("");
+  $("#mIncludes").innerHTML=p.includes.map(i=>`<li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>${i}</li>`).join("");
+  $("#mPrice").innerHTML=`${p.price.split(" ")[0]}<span style="font-size:13px;font-family:var(--sans)"> ${p.price.split(" ")[1]||"USD"} · ${p.dur}</span>`;
+  const affiliate=$("#mAffiliate"),bookNow=$("#mBookNow"),hasAffiliate=Boolean(p.affiliateUrl);
+  affiliate.href=p.affiliateUrl||"https://wa.me/254724828919?text=I%27m%20interested%20in%20a%20hotel%20or%20stay";affiliate.textContent=hasAffiliate?"View on Booking.com":"Enquire Now";
+  bookNow.href=p.affiliateUrl||"#";bookNow.target=hasAffiliate?"_blank":"_self";bookNow.textContent=hasAffiliate?"Book Now":"Request This Stay";
+  [affiliate,bookNow].forEach(link=>{link.dataset.propertyId=p.id;link.dataset.destination=p.loc;link.dataset.affiliate=String(hasAffiliate);});
+  modal.classList.add("open");modal.setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+}
+function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.style.overflow="";}
+modal.addEventListener("click",e=>{
+  const affiliate=e.target.closest("[data-affiliate='true']");if(affiliate)fetch("/api/affiliate-click",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({propertyId:affiliate.dataset.propertyId,destination:affiliate.dataset.destination,url:affiliate.href}),keepalive:true}).catch(()=>{});
+  const request=e.target.closest("#mBookNow[data-affiliate='false']");if(request){e.preventDefault();return openQuote();}
+  if(e.target.closest("[data-close]"))return closeModal();
+  if(e.target.closest("#galleryPrev"))return showGalleryImage(activeGalleryIndex-1);
+  if(e.target.closest("#galleryNext"))return showGalleryImage(activeGalleryIndex+1);
+  const dot=e.target.closest("[data-gallery-index]");if(dot)showGalleryImage(+dot.dataset.galleryIndex);
+});
+
+/* ================= MANAGED CATALOGUE ================= */
+async function loadManagedCatalogue(){
+  try{
+    const c=await fetch("/api/catalog").then(r=>r.json());if(!c.managed)return;
+    const money=x=>`${x.currency==="USD"?"$":`${x.currency||"USD"} `}${Number(x.price||0).toLocaleString()} ${x.currency==="USD"?"USD":""}`.trim();
+    const hotels=(c.hotels||[]).map((x,i)=>({id:x.id||`hotel-${i}`,title:x.title,img:x.image,loc:x.location,tags:x.tags||[],dur:x.duration||"Luxury Stay",durKey:"any",price:money(x),tier:Math.max(1,Math.round(x.rating||4)),stars:Number(x.rating||0),blurb:x.summary||x.description,desc:x.description||x.summary,highlights:x.features||[],includes:x.includes||[],affiliateUrl:x.affiliateUrl||"",gallery:x.gallery||[]}));
+    const safaris=(c.safaris||[]).map(x=>({id:x.id,title:x.title,img:x.image,loc:x.location,tags:x.tags||[],dur:x.duration||"Private Journey",price:money(x),stars:Number(x.rating||0),blurb:x.summary||x.description}));
+    if(hotels.length){PACKAGES=hotels;Object.keys(PACKAGE_GALLERIES).forEach(k=>delete PACKAGE_GALLERIES[k]);hotels.forEach(x=>PACKAGE_GALLERIES[x.id]=[x.img,...x.gallery.filter(v=>v!==x.img)]);renderHotels();}
+    if(safaris.length){SAFARIS=safaris;renderSafaris();}
+  }catch(e){console.warn("Managed catalogue unavailable",e);}
+}
+loadManagedCatalogue();
+
+/* ================= ENQUIRY FLOW ================= */
+const quoteModal=$("#quoteModal"),quoteForm=$("#quoteForm"),quoteStatus=$("#quoteStatus");
+function openQuote(){
+  closeDrawer();closeModal();quoteModal.classList.add("open");quoteModal.setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";setTimeout(()=>$("#qName").focus(),350);
+}
+function closeQuote(){quoteModal.classList.remove("open");quoteModal.setAttribute("aria-hidden","true");document.body.style.overflow="";}
+document.addEventListener("click",e=>{if(e.target.closest("[data-quote]")){e.preventDefault();openQuote();}});
+quoteModal.addEventListener("click",e=>{if(e.target.closest("[data-quote-close]"))closeQuote();});
+quoteForm.addEventListener("submit",async e=>{
+  e.preventDefault();const button=quoteForm.querySelector("button[type=submit]");
+  button.disabled=true;button.textContent="Sending…";quoteStatus.classList.remove("show");
+  try{
+    const payload=Object.fromEntries(new FormData(quoteForm).entries());
+    const response=await fetch("/api/enquiries",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+    const result=await response.json();if(!response.ok)throw new Error(result.error||"Please try again.");
+    quoteStatus.textContent="Thank you — your journey request is with our safari design team.";quoteStatus.classList.add("show");
+    quoteForm.reset();setTimeout(()=>{closeQuote();toast("Enquiry received — we'll be in touch within 24 hours.");},1700);
+  }catch(error){quoteStatus.textContent=error.message||"We couldn't send this just now. Please try WhatsApp instead.";quoteStatus.classList.add("show");}
+  finally{button.disabled=false;button.textContent="Send My Enquiry";}
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){closeModal();closeQuote();closeDrawer();}
+  if(modal.classList.contains("open")&&e.key==="ArrowLeft")showGalleryImage(activeGalleryIndex-1);
+  if(modal.classList.contains("open")&&e.key==="ArrowRight")showGalleryImage(activeGalleryIndex+1);
+});
+let galleryTouchStart=0;
+$(".modal-media").addEventListener("touchstart",e=>{galleryTouchStart=e.changedTouches[0].clientX;},{passive:true});
+$(".modal-media").addEventListener("touchend",e=>{
+  const distance=e.changedTouches[0].clientX-galleryTouchStart;
+  if(Math.abs(distance)>48)showGalleryImage(activeGalleryIndex+(distance<0?1:-1));
+},{passive:true});
+
+/* ================= TESTIMONIALS ================= */
+const stage=$("#testiStage"),nav=$("#testiNav");
+stage.innerHTML=TESTIMONIALS.map((t,i)=>`
+<div class="testi-card${i===0?" active":""}">
+  <span class="stars">${starStr(t.stars)}</span>
+  <blockquote>"${t.q}"</blockquote>
+  <div class="testi-who">
+    <div class="testi-av">${t.n.split(" ").map(w=>w[0]).slice(0,2).join("")}</div>
+    <div><strong>${t.n}</strong><span>${t.w}</span></div>
+  </div>
+</div>`).join("");
+nav.innerHTML=TESTIMONIALS.map((_,i)=>`<button class="${i===0?"active":""}" aria-label="Review ${i+1}"></button>`).join("");
+let tIdx=0,tTimer;
+function showTesti(i){
+  tIdx=i;
+  $$(".testi-card").forEach((c,k)=>c.classList.toggle("active",k===i));
+  $$("#testiNav button").forEach((b,k)=>b.classList.toggle("active",k===i));
+}
+function autoTesti(){tTimer=setInterval(()=>showTesti((tIdx+1)%TESTIMONIALS.length),6000);}
+nav.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;clearInterval(tTimer);showTesti([...nav.children].indexOf(b));autoTesti();});
+autoTesti();
+
+/* ================= HERO SLIDESHOW ================= */
+const slides=$$(".hero-slide"),dots=$$("#heroDots button");
+let hIdx=0,hTimer;
+function showSlide(i){
+  hIdx=i;
+  slides.forEach((s,k)=>s.classList.toggle("active",k===i));
+  dots.forEach((d,k)=>d.classList.toggle("active",k===i));
+}
+function autoHero(){hTimer=setInterval(()=>showSlide((hIdx+1)%slides.length),6500);}
+dots.forEach((d,k)=>d.addEventListener("click",()=>{clearInterval(hTimer);showSlide(k);autoHero();}));
+autoHero();
+
+/* ================= HEADER / DRAWER ================= */
+const header=$("#siteHeader");
+addEventListener("scroll",()=>{
+  header.classList.toggle("scrolled",scrollY>40);
+},{passive:true});
+const drawer=$("#drawer"),toggle=$("#navToggle");
+function openDrawer(){drawer.classList.add("open");drawer.setAttribute("aria-hidden","false");toggle.classList.add("open");toggle.setAttribute("aria-expanded","true");document.body.style.overflow="hidden";}
+function closeDrawer(){drawer.classList.remove("open");drawer.setAttribute("aria-hidden","true");toggle.classList.remove("open");toggle.setAttribute("aria-expanded","false");document.body.style.overflow="";}
+toggle.addEventListener("click",()=>drawer.classList.contains("open")?closeDrawer():openDrawer());
+drawer.addEventListener("click",e=>{if(e.target.closest("[data-close],a"))closeDrawer();});
+
+/* ================= REVEAL ON SCROLL ================= */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.12});
+$$(".reveal").forEach(el=>io.observe(el));
+
+/* ================= NEWSLETTER ================= */
+$("#newsletterForm").addEventListener("submit",e=>{e.preventDefault();e.target.reset();toast("Karibu! Safari inspiration is on its way to your inbox.");});
+
+/* date min = today */
+$("#fDate").min=new Date().toISOString().split("T")[0];
+</script>
+</body>
+</html>
